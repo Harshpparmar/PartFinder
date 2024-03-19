@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+  <nav class="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
+    <!-- Navbar -->
+    <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+        <!-- Logo and site title -->
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="photos/cpu (2).png" class="h-8" alt="Flowbite Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">PartFinder</span>
+        </a>
+        <!-- Hamburger menu button for mobile -->
+        <button data-collapse-toggle="mega-menu-full" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mega-menu-full" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <!-- Mega menu -->
+        <div id="mega-menu-full" class="items-center justify-between font-medium hidden w-full md:flex md:w-auto md:order-1">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-900">
+                <!-- Navbar items -->
+                <li>
+                    <a href="#" class="block py-2 px-3 text-cyan-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Home</a>
+                </li>
+                <li>
+                    <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded md:w-auto hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Products <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  </svg></button>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Guides</a>
+                </li>
+                <li>
+                    <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Complete builds</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Mega menu dropdown -->
+    <div id="mega-menu-full-dropdown" class="mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-700 dark:border-gray-600">
+        <div class="grid max-w-screen-md px-2 py-3 mx-auto text-gray-900 dark:text-white sm:grid-cols-4 md:px-6">
+            <ul>
+                <!-- First column -->
+                <li>
+                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                      <span class="text-sm text-gray-500 dark:text-gray-400"><img class="h-auto max-w-40" src="photos/nav-cpu-2023.png" alt="image description"></span>
+                        <div class="font-semibold">CPUs</div>
+                    </a>
+                </li>
+                <li>
+                  <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <span class="text-sm text-gray-500 dark:text-gray-400"><img class="h-auto max-w-40" src="photos/nav-cpucooler-2023.png" alt="image description"></span>
+                      <div class="font-semibold">CPU Coolers</div>
+                  </a>
+                </li>
+            </ul>
+            <ul>
+                <!-- Second column -->
+                <li>
+                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <span class="text-sm text-gray-500 dark:text-gray-400"><img class="h-auto max-w-40" src="photos/nav-videocard-2023.png" alt="image description"></span>
+                        <div class="font-semibold">Video Card</div>
+                    </a>
+                </li>
+                <li>
+                  <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                      <span class="text-sm text-gray-500 dark:text-gray-400"><img class="h-auto max-w-40" src="photos/nav-ssd-2023.png" alt="image description"></span>
+                      <div class="font-semibold">Storage</div>
+                  </a>
+              </li>
+          </ul>
+          <!-- Third column -->
+          <ul>
+              <li>
+                  <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                      <span class="text-sm text-gray-500 dark:text-gray-400"><img class="h-auto max-w-40" src="photos/nav-motherboard-2023.png" alt="image description"></span>
+                      <div class="font-semibold">Motherboards</div>
+                  </a>
+              </li>
+              <li>
+                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                  <span class="text-sm text-gray-500 dark:text-gray-400"><img class="h-auto max-w-40" src="photos/nav-powersupply-2023.png" alt="image description"></span>
+                    <div class="font-semibold">Power Supplies</div>
+                </a>
+            </li>
+        </ul>
+        <ul>
+          <!-- Fourth column -->
+          <li>
+              <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                  <span class="text-sm text-gray-500 dark:text-gray-400"><img class="h-auto max-w-40" src="photos/nav-memory-2023.png" alt="image description"></span>
+                  <div class="font-semibold">Memory</div>
+              </a>
+          </li>
+          <li>
+            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+              <span class="text-sm text-gray-500 dark:text-gray-400"><img class="h-auto max-w-40" src="photos/nav-case-2023.png" alt="image description"></span>
+                <div class="font-semibold">Cases</div>
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+</nav>
+
+<!-- end of header section or navbar -->
+
+<main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 ">
+  <div class="relative isolate px-6 pt-14 lg:px-8">
+  <div class="text-center">
+      <h1 class="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl sm:tracking-tight md:text-6xl ms:tracking-tight">
+          <span class="block xl:inline">
+              Pick Parts. 
+          </span>
+          <span class="block text-cyan-600 xl:inline">Build Your PC</span>
+      </h1>
+      <p class="mt-3 mx-w-md mx-auto text-base text-gray-600 sm:text-lg md:mt-5 md:text-xl">
+          We provide part selection, pricing, and compatibility guidance 
+      </p>
+      <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
+          <div class="rounded-md shadow">
+              <a 
+              class="w-full flex items-center justify-center px-7 py-2 border border-transparent text-base font-medium rounded-md text white bg-cyan-600 hover:bg-slate-300 md:py-2 md:text-lg md:px-8"
+              href="">
+              <!-- <span >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                      <path fill-rule="evenodd" d="M14.5 10a4.5 4.5 0 0 0 4.284-5.882c-.105-.324-.51-.391-.752-.15L15.34 6.66a.454.454 0 0 1-.493.11 3.01 3.01 0 0 1-1.618-1.616.455.455 0 0 1 .11-.494l2.694-2.692c.24-.241.174-.647-.15-.752a4.5 4.5 0 0 0-5.873 4.575c.055.873-.128 1.808-.8 2.368l-7.23 6.024a2.724 2.724 0 1 0 3.837 3.837l6.024-7.23c.56-.672 1.495-.855 2.368-.8.096.007.193.01.291.01ZM5 16a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z" clip-rule="evenodd" />
+                      <path d="M14.5 11.5c.173 0 .345-.007.514-.022l3.754 3.754a2.5 2.5 0 0 1-3.536 3.536l-4.41-4.41 2.172-2.607c.052-.063.147-.138.342-.196.202-.06.469-.087.777-.067.128.008.257.012.387.012ZM6 4.586l2.33 2.33a.452.452 0 0 1-.08.09L6.8 8.214 4.586 6H3.309a.5.5 0 0 1-.447-.276l-1.7-3.402a.5.5 0 0 1 .093-.577l.49-.49a.5.5 0 0 1 .577-.094l3.402 1.7A.5.5 0 0 1 6 3.31v1.277Z" />
+                  </svg>
+                  
+                  </svg>
+              </span> -->
+              Build Now </a>
+          </div>
+      </div>
+   </div>
+</div>
+</main>
+<!-- <div class="relative isolate px-6 pt-14 lg:px-8">
+  <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+    <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+  <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+    <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+      <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+        Announcing our next round of funding. <a href="#" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+    <div class="text-center">
+      <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Data to enrich your online business</h1>
+      <p class="mt-6 text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+      <div class="mt-10 flex items-center justify-center gap-x-6">
+        <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+    <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+</div> -->
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function () {
+  const dropdownButton = document.querySelector('#mega-menu-full-dropdown-button');
+  const dropdownMenu = document.getElementById('mega-menu-full-dropdown');
+  
+  dropdownButton.addEventListener('click', function () {
+    const expanded = dropdownButton.getAttribute('aria-expanded') === 'true';
+    dropdownButton.setAttribute('aria-expanded', String(!expanded)); // Convert boolean to string
+    dropdownMenu.classList.toggle('hidden', !expanded); // Toggle the 'hidden' class based on 'expanded' state
+  });
+});
+
+
+</script>
+
+</body>
+</html>
