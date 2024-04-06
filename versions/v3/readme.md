@@ -19,3 +19,9 @@ https://play.tailwindcss.com/ZszfXsLfJR
 
 - footer
   https://play.tailwindcss.com/hEQzUHX2IG
+
+
+
+  ##buiid
+  - build now page
+    https://play.tailwindcss.com/wHGcCSEuRm
