@@ -1,4 +1,4 @@
-# this is with some changes 
+# with some changes for landing page :
 - 1st 
 https://play.tailwindcss.com/dv5bTBvvHG
 
@@ -22,6 +22,7 @@ https://play.tailwindcss.com/ZszfXsLfJR
 
 
 
-  ##buiid
+# Buiid Page : 
   - build now page
     https://play.tailwindcss.com/wHGcCSEuRm
+    - for this page ref : https://play.tailwindcss.com/ZmHC4DX4IJ (only to copy and refer the content)
