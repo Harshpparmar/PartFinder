@@ -26,3 +26,5 @@ https://play.tailwindcss.com/ZszfXsLfJR
   - build now page
     https://play.tailwindcss.com/wHGcCSEuRm
     - for this page ref : https://play.tailwindcss.com/ZmHC4DX4IJ (only to copy and refer the content)
+   
+    - for cpu page : https://play.tailwindcss.com/Veu7MLP169?layout=horizontal
