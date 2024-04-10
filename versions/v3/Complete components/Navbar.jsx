@@ -37,14 +37,17 @@ const Navbar = () => {
     };
 
     return (
-        <header className="bg-gradient-to-r from-blue-500 to-purple-500 ">
-            
-                <div className="mx-0 w-full flex h-16 justify-between">
+        <header className="bg-gradient-to-r from-blue-500 to-purple-500 w-full ">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="flex h-16 justify-between items-center px-4 md:px-0">
                     <div className="flex items-center">
-                        <a href="/">
-                            <img className="block h-8 w-auto lg:hidden" src="photos/cpu (1).png" alt="Logo" />
-                            <img className="hidden h-8 w-auto lg:block" src="photos/cpu (1).png" alt="Logo" />
+                        <a href="/" className="flex items-center ">
+                            <img className="block h-8 w-auto lg:hidden" src="/src/photos/cpu (1).png" alt="Logo" />
+                            <img className="hidden h-8 w-auto lg:block" src="/src/photos/cpu (1).png" alt="Logo" />
+                            
+                    
                         </a>
+                        
                     </div>
                     <nav className="hidden md:flex md:items-center md:space-x-8">
                         <a href="/" className="font-medium text-gray-900 hover:text-gray-700">Home</a>
@@ -81,7 +84,7 @@ const Navbar = () => {
                         </button>
                     </div>
                 </div>
-            
+            </div>
         
             {/* Mobile Menu */}
             <div className={`md:hidden ${mobileMenuOpen ? '' : 'hidden'}`} id="mobile-menu-container">
