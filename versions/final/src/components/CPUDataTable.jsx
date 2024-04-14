@@ -1,35 +1,6 @@
 import React from 'react';
 
-const CPUDataTable = () => {
-  // Define CPU data
-  const cpuData = [
-    {
-      name: "Intel Core i5-12600K",
-      coresThreads: "10 / 16",
-      baseBoost: "3.7 GHz / 4.9 GHz",
-      tdp: "125W",
-      price: "$279.99",
-      buyLink: "#"
-    },
-    {
-      name: "AMD Ryzen 7 5800X",
-      coresThreads: "8 / 16",
-      baseBoost: "3.8 GHz / 4.7 GHz",
-      tdp: "105W",
-      price: "$299.99",
-      buyLink: "#"
-    },
-    {
-      name: "AMD Ryzen 7 5800X",
-      coresThreads: "8 / 16",
-      baseBoost: "3.8 GHz / 4.7 GHz",
-      tdp: "105W",
-      price: "$299.99",
-      buyLink: "#"
-    },
-    // Add more CPU data as needed
-  ];
-
+const CPUDataTable = ({cpuData}) => {
   return (
     <div className="bg-gray-100 py-4 sm:py-8">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -49,6 +20,7 @@ const CPUDataTable = () => {
               {cpuData.map((cpu, index) => (
                 <tr key={index} className="block border-b lg:table-row">
                   <td className="block cursor-pointer px-2 py-2 font-medium hover:underline sm:px-4 sm:py-3 lg:table-cell">
+                    <img src={cpu.imageUrl} alt={cpu.name} className="h-8 w-8 inline-block mr-2" />
                     <span className="font-semibold lg:hidden">Processor:</span> {cpu.name}
                   </td>
                   <td className="block px-2 py-2 sm:px-4 sm:py-3 lg:table-cell">
