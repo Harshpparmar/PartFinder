@@ -28,3 +28,5 @@ https://play.tailwindcss.com/ZszfXsLfJR
     - for this page ref : https://play.tailwindcss.com/ZmHC4DX4IJ (only to copy and refer the content)
    
     - for cpu page : https://play.tailwindcss.com/Veu7MLP169?layout=horizontal
+/// issues
+- fix card and img of card 
