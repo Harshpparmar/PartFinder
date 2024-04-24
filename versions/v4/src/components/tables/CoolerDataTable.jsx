@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CoolerDataTable = ({ coolerData }) => {
+const CoolerDataTable = ({ coolerData ,onAddCooler }) => {
   return (
     <div className="bg-gray-100 py-4 sm:py-8">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -37,7 +37,12 @@ const CoolerDataTable = ({ coolerData }) => {
                   </td>
                   <td className="block px-2 py-2 text-right sm:px-4 sm:py-3 lg:table-cell">
                     <span className="font-semibold lg:hidden">ADD:</span>
-                    <a href={cooler.buyLink} className="rounded bg-blue-500 px-3 py-1 text-xs font-medium text-white hover:bg-blue-600 sm:text-sm">ADD</a>
+                    <button
+                          onClick={() => onAddCooler(cooler)}
+                          className="rounded bg-blue-500 px-3 py-1 text-xs font-medium text-white hover:bg-blue-600 sm:text-sm"
+                    >
+                      ADD
+                    </button>
                   </td>
                 </tr>
               ))}

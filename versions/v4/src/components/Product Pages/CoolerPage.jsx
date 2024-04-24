@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import CoolerDataTable from '../tables/CoolerDataTable';
 
 const CoolerPage = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [selectedCooler, setSelectedCooler] = useState(null);
   // Define cooler data
   const coolerData = [
     {
@@ -69,11 +73,18 @@ const CoolerPage = () => {
     },
     // Add more cooler data as needed
   ];
+  // In the cooler selection page
+const handleAddCooler = (cooler) => {
+  setSelectedCooler(cooler);
+  // navigate('/builder', { state: { cooler: cooler } });
+  // navigate('/builder', { state: { cpu: location.state.cpu, cooler: cooler } });
+  navigate('/builder', { state: { ...location.state, cooler: cooler } });
+};
 
   return (
     <div>
       {/* Other cooler page content */}
-      <CoolerDataTable coolerData={coolerData} />
+      <CoolerDataTable coolerData={coolerData} onAddCooler={handleAddCooler}/>
     </div>
   );
 };
