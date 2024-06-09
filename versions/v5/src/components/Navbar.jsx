@@ -42,20 +42,20 @@ const Navbar = () => {
     };
 
     return (
-        <header className="w-full bg-comet-300 text-white">
+        <header className="w-full bg-transparent bg-white text-black">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 justify-between items-center px-4 md:px-0">
                     <div className="flex items-center">
                         <Link to="/" className="flex items-center ">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="block h-8 w-auto lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="block h-8 w-auto lg:hidden ">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" />
                         </svg>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="hidden h-8 w-auto lg:block">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" />
                         </svg>
-
-                            {/* <img className="block h-8 w-auto lg:hidden" src="/src/photos/cpu (1).png" alt="Logo" /> */}
-                            {/* <img className="hidden h-8 w-auto lg:block" src="/src/photos/cpu (1).png" alt="Logo" /> */}
+{/* 
+                            <img className="block h-8 w-auto lg:hidden" src="/src/photos/cpu (1).png" alt="Logo" /> 
+                             <img className="hidden h-8 w-auto lg:block" src="/src/photos/cpu (1).png" alt="Logo" /> */}
                         </Link>
                     </div>
 
@@ -102,12 +102,12 @@ const Navbar = () => {
         
             {/* Mobile Menu */}
             <div className={`md:hidden ${mobileMenuOpen ? '' : 'hidden'}`} id="mobile-menu-container">
-                <div className="space-y-1 px-2 pb-3 pt-2">
+                <div className="space-y-1 px-2 pb-3 pt-2 z-auto">
                     <Link to="/" className="block rounded-md px-3 py-2 text-left text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Home</Link>
                     <Link to="/builder" className="block rounded-md px-3 py-2 text-left text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Build</Link>
                     <button type="button" className="block w-full rounded-md px-3 py-2 text-left text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900" id="mobile-products-dropdown" onClick={toggleMobileProductsDropdown}>
                         Products
-                        <svg className="float-right h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <svg className="float-right h-5 w-5 text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                             <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                         </svg>
                     </button>

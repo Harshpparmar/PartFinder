@@ -40,11 +40,17 @@ const Complete = () => {
     // ];
     return (
         <>
-            <section className='h-screen'>
+            {/* <section className='h-screen container mx-auto'>
             
             <ProductList products={products} maxProducts={9999} />
                 
-            </section>
+            </section> */}
+            <section className="min-h-screen bg-gray-100">
+            <div className="container mx-auto py-8">
+                <h1 className="text-3xl font-semibold text-center mb-8">Guides</h1>
+                <ProductList products={products} maxProducts={9999} />
+            </div>
+        </section>
         </>
     )
 }

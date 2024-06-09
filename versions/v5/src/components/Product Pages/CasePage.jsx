@@ -1,7 +1,15 @@
 import React from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import CaseDataTable from "../tables/CaseDataTable";
 
 const CasePage = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleSelectedCase = (selectedCase) => {
+    navigate('/builder', {state: {...location.state, case: selectedCase} });
+  };
+
     const caseData = [
         {
             "name": "NZXT H510",
@@ -97,7 +105,7 @@ const CasePage = () => {
 
     return(
         <div>
-            <CaseDataTable caseData={caseData} />
+            <CaseDataTable caseData={caseData} onSelectCase={handleSelectedCase} />
         </div>
     )
 };

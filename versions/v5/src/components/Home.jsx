@@ -40,8 +40,25 @@ const Home = () => {
     //     // Add more product objects as needed
     //   ];
     return (
-        <>
-            <section className='h-screen flex flex-col justify-center items-center'>
+        <>  
+            {/* <section className='h-screen flex flex-col justify-center items-center bg-gradient-to-br from-gray-200 to-transparent bg-repeat bg-origin-border bg-size-10 bg-position-0'>
+    <div className='text-center'>
+        <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900'>
+            <span className='block xl:inline'>Pick Parts.</span> 
+            <span className='block text-indigo-600 xl:inline'>Build your PC</span>
+        </h1>
+        <p className='mt-4 mx-auto text-base text-gray-600 sm:text-lg md:text-xl max-w-md'>
+            We provide part selection, pricing, and compatibility guidance
+        </p>
+        <div className='mt-8'>
+            <Link to='/builder' className='inline-block rounded-md bg-indigo-600 px-6 py-3 text-lg font-medium text-white shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'>
+                Build Now
+            </Link>
+        </div>
+    </div>
+</section> */}
+
+            {/* <section className='h-screen flex flex-col justify-center items-center'>
                 <div className='text-center'>
                 <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900'>
                       <span className='block xl:inline'>Pick Parts.</span> 
@@ -56,7 +73,26 @@ const Home = () => {
                     </Link>
                 </div>
                 </div>
-            </section>
+            </section> */}
+            <section className='h-screen flex flex-col justify-center items-center bg-radial-dot '>
+    <div className='text-center '>
+        <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900  '>
+            <span className='block xl:inline'>Pick Parts.</span> 
+            <span className='block text-indigo-600 xl:inline'>Build your PC</span>
+        </h1>
+        <p className='mt-4 mx-auto text-base text-gray-600 sm:text-lg md:text-xl max-w-md backdrop-blur-md'>
+            We provide part selection, pricing, and compatibility guidance
+        </p>
+        <div className='mt-8 '>
+            <Link to='/builder' className='inline-block rounded-md bg-indigo-600 px-6 py-3 text-lg font-medium text-white shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'>
+                Build Now
+            </Link>
+        </div>
+    </div>
+</section>
+
+
+
 
             {/* State section */}
 

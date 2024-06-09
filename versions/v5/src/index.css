@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer utilities {
+    .bg-radial-dot {
+        background-image: radial-gradient(circle, #5455f2 1px, transparent 1px), radial-gradient(circle, #5455f2 1px, #fffcfc 1px);
+        background-size: 34px 34px;
+        background-position: 0 0, 17px 17px;
+    }
+} */
+@layer utilities {
+    .bg-radial-dot {
+        background-image: radial-gradient(circle, #5455f2 1px, transparent 1px), radial-gradient(circle, #5455f2 1px, #fffcfc 1px);
+        background-size: 34px 34px;
+        background-position: 0 0, 17px 17px;
+    }
+}
+

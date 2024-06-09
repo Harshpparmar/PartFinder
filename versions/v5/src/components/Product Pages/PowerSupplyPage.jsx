@@ -1,7 +1,14 @@
 import React from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import PowerSupplyDataTable from '../tables/PowerSupplyDataTable';
 
 const PowerSupplyPage = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleSelectPowerSupply = (selectedPowerSupply) => {
+    navigate('/builder', {state: {...location.state, powerSupply: selectedPowerSupply} });
+  };
     const powerSupplyData = [
         {
             "name": "EVGA SuperNOVA 850 G3",
@@ -106,7 +113,7 @@ const PowerSupplyPage = () => {
 
     return (
         <div>
-            <PowerSupplyDataTable powerSupplyData={powerSupplyData} />
+            <PowerSupplyDataTable powerSupplyData={powerSupplyData} onSelectPowerSupply={handleSelectPowerSupply}/>
         </div>
     )
 };

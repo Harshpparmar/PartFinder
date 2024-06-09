@@ -1,6 +1,6 @@
 import React from 'react';
 
-const StorageDataTable = ({ storageData }) => {
+const StorageDataTable = ({ storageData , onSelectStorage}) => {
   return (
     <div className="bg-gray-100 py-4 sm:py-8">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -13,7 +13,8 @@ const StorageDataTable = ({ storageData }) => {
                 <th className="px-2 py-2 text-left font-medium sm:px-4 sm:py-3">Type</th>
                 <th className="px-2 py-2 text-left font-medium sm:px-4 sm:py-3">Form Factor</th>
                 <th className="px-2 py-2 text-right font-medium sm:px-4 sm:py-3">Price</th>
-                <th className="px-2 py-2 text-right font-medium sm:px-4 sm:py-3"></th>
+                <th className="px-2 py-2 text-right font-medium sm:px-4 sm:py-3">Buy</th>
+                <th className="px-2 py-2 text-right font-medium sm:px-4 sm:py-3">Select</th>
               </tr>
             </thead>
             <tbody className="bg-white text-gray-700">
@@ -37,7 +38,15 @@ const StorageDataTable = ({ storageData }) => {
                   </td>
                   <td className="block px-2 py-2 text-right sm:px-4 sm:py-3 lg:table-cell">
                     
-                    <a href={storageData.buyLink} className="rounded bg-blue-500 px-3 py-1 text-xs font-medium text-white hover:bg-blue-600 sm:text-sm">ADD</a>
+                    <a href={storageData.buyLink} className="rounded bg-blue-500 px-3 py-1 text-xs font-medium text-white hover:bg-blue-600 sm:text-sm">Buy</a>
+                  </td>
+                  <td className="block px-2 py-2 text-right sm:px-4 sm:py-3 lg:table-cell">
+                  <button
+                      onClick={() => onSelectStorage(storageData)}
+                      className="rounded bg-green-500 px-3 py-1 text-xs font-medium text-white hover:bg-green-600 sm:text-sm"
+                  >
+                    Select
+                  </button>
                   </td>
                 </tr>
               ))}

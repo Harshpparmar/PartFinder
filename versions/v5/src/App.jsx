@@ -14,6 +14,8 @@ import VideoCardPage from "./components/Product Pages/VideoCardPage"
 import PowerSupplyPage from "./components/Product Pages/PowerSupplyPage"
 import CasePage from "./components/Product Pages/CasePage"
 
+
+
 function App() {
     return (
         <>
@@ -25,11 +27,12 @@ function App() {
                     <Route exact path="/builder" element={<Builder />} />
                     <Route exact path="/guides" element={<Guides />} />
                     <Route path="/components/cpu" element={<CPUPage />} />
+                    
                     <Route path="/components/cooler" element={<CoolerPage />} />
                     <Route path="/components/motherboard" element={<MotherboardPage />} />
                     <Route path="/components/memory" element={<MemoryPage/>} />
                     <Route path="/components/storage" element={<StoragePage/>} />
-                    <Route path="/components/video-card" element={<VideoCardPage/>} />
+                    <Route path="/components/videoCard" element={<VideoCardPage/>} />
                     <Route path="/components/power-supply" element={<PowerSupplyPage/>} />
                     <Route path="/components/case" element={<CasePage/>} />
                 </Routes>
