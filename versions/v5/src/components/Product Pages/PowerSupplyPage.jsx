@@ -7,116 +7,49 @@ const PowerSupplyPage = () => {
   const location = useLocation();
 
   const handleSelectPowerSupply = (selectedPowerSupply) => {
-    navigate('/builder', {state: {...location.state, powerSupply: selectedPowerSupply} });
+    navigate('/builder', { state: { ...location.state, powerSupply: selectedPowerSupply } });
   };
-    const powerSupplyData = [
-        {
-            "name": "EVGA SuperNOVA 850 G3",
-            "type": "ATX",
-            "rating": "80 Plus Gold",
-            "wattage": "850W",
-            "modular": "Fully Modular",
-            "color": "Black",
-            "price": "$139.99",
-            "buyLink": "#",
-            "imageUrl": "https://cdna.pcpartpicker.com/static/forever/images/product/afa0f4bbe4410fbe2949a19211ebb2bb.256p.jpg"
-          },
-          {
-            "name": "Corsair RM850x",
-            "type": "ATX",
-            "rating": "80 Plus Gold",
-            "wattage": "850W",
-            "modular": "Fully Modular",
-            "color": "Black",
-            "price": "$129.99",
-            "buyLink": "#",
-            "imageUrl": "https://cdna.pcpartpicker.com/static/forever/images/product/4f19c6453ce4ebe67091e6d9735f3a19.256p.jpg"
-          },
-          {
-            "name": "Seasonic Focus GX-650",
-            "type": "ATX",
-            "rating": "80 Plus Gold",
-            "wattage": "650W",
-            "modular": "Semi-Modular",
-            "color": "Gray",
-            "price": "$99.99",
-            "buyLink": "#",
-            "imageUrl": "https://cdna.pcpartpicker.com/static/forever/images/product/84b3aab42651adcad9a0b05ac262ea53.256p.jpg"
-          },
-          {
-            "name": "EVGA SuperNOVA 850 G3",
-            "type": "ATX",
-            "rating": "80 Plus Gold",
-            "wattage": "850W",
-            "modular": "Fully Modular",
-            "color": "Black",
-            "price": "$139.99",
-            "buyLink": "#",
-            "imageUrl": "https://cdna.pcpartpicker.com/static/forever/images/product/afa0f4bbe4410fbe2949a19211ebb2bb.256p.jpg"
-          },
-          {
-            "name": "Corsair RM850x",
-            "type": "ATX",
-            "rating": "80 Plus Gold",
-            "wattage": "850W",
-            "modular": "Fully Modular",
-            "color": "Black",
-            "price": "$129.99",
-            "buyLink": "#",
-            "imageUrl": "https://cdna.pcpartpicker.com/static/forever/images/product/4f19c6453ce4ebe67091e6d9735f3a19.256p.jpg"
-          },
-          {
-            "name": "Seasonic Focus GX-650",
-            "type": "ATX",
-            "rating": "80 Plus Gold",
-            "wattage": "650W",
-            "modular": "Semi-Modular",
-            "color": "Gray",
-            "price": "$99.99",
-            "buyLink": "#",
-            "imageUrl": "https://cdna.pcpartpicker.com/static/forever/images/product/84b3aab42651adcad9a0b05ac262ea53.256p.jpg"
-          },
-          {
-            "name": "EVGA SuperNOVA 850 G3",
-            "type": "ATX",
-            "rating": "80 Plus Gold",
-            "wattage": "850W",
-            "modular": "Fully Modular",
-            "color": "Black",
-            "price": "$139.99",
-            "buyLink": "#",
-            "imageUrl": "https://cdna.pcpartpicker.com/static/forever/images/product/afa0f4bbe4410fbe2949a19211ebb2bb.256p.jpg"
-          },
-          {
-            "name": "Corsair RM850x",
-            "type": "ATX",
-            "rating": "80 Plus Gold",
-            "wattage": "850W",
-            "modular": "Fully Modular",
-            "color": "Black",
-            "price": "$129.99",
-            "buyLink": "#",
-            "imageUrl": "https://cdna.pcpartpicker.com/static/forever/images/product/4f19c6453ce4ebe67091e6d9735f3a19.256p.jpg"
-          },
-          {
-            "name": "Seasonic Focus GX-650",
-            "type": "ATX",
-            "rating": "80 Plus Gold",
-            "wattage": "650W",
-            "modular": "Semi-Modular",
-            "color": "Gray",
-            "price": "$99.99",
-            "buyLink": "#",
-            "imageUrl": "https://cdna.pcpartpicker.com/static/forever/images/product/84b3aab42651adcad9a0b05ac262ea53.256p.jpg"
-          },
-    ];
+  const powerSupplyData = [
+    {
+      name: "EVGA SuperNOVA 850 G5",
+      type: "ATX",
+      rating: "80 Plus Gold",
+      wattage: "850W",
+      modular: "Fully Modular",
+      color: "Black",
+      price: "₹" + "41,320",
+      buyLink: "https://amzn.in/d/60ZcfzU",
+      imageUrl: "https://m.media-amazon.com/images/I/615ipi-tHtL._SX522_.jpg"
+    },
+    {
+      name: "Corsair RM850e",
+      type: "ATX 3.0",
+      rating: "80 Plus Gold",
+      wattage: "850W",
+      modular: "Fully Modular",
+      color: "Black",
+      price: "₹" + "14,999",
+      buyLink: "https://amzn.in/d/0ZCjXAs",
+      imageUrl: "https://m.media-amazon.com/images/I/61J0tIvkBYL._SX679_.jpg"
+    },
+    {
+      name: "Ant Esports FP650B",
+      type: "ATX",
+      rating: "80 Plus Bronze",
+      wattage: "650W",
+      modular: "Non-Modular",
+      color: "Gray",
+      price: "₹" + "3,679",
+      buyLink: "https://amzn.in/d/duVtBP0",
+      imageUrl: "https://m.media-amazon.com/images/I/715qh8ANbtL._SX679_.jpg"
+    },
+  ];
 
-    return (
-        <div>
-            <PowerSupplyDataTable powerSupplyData={powerSupplyData} onSelectPowerSupply={handleSelectPowerSupply}/>
-        </div>
-    )
+  return (
+    <div>
+      <PowerSupplyDataTable powerSupplyData={powerSupplyData} onSelectPowerSupply={handleSelectPowerSupply} />
+    </div>
+  )
 };
 
 export default PowerSupplyPage;
-

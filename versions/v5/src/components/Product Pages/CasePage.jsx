@@ -7,107 +7,47 @@ const CasePage = () => {
   const location = useLocation();
 
   const handleSelectedCase = (selectedCase) => {
-    navigate('/builder', {state: {...location.state, case: selectedCase} });
+    navigate('/builder', { state: { ...location.state, case: selectedCase } });
   };
 
-    const caseData = [
-        {
-            "name": "NZXT H510",
-            "type": "Mid Tower",
-            "color": "Black",
-            "sidepanel": "Tempered Glass",
-            "exvolume": "57.5L",
-            "price": "$69.99",
-            "buyLink": "#",
-            "imageUrl": "https://cdna.pcpartpicker.com/static/forever/images/product/84cb77175187296029f50f8bf6ca6960.256p.jpg"
-          },
-          {
-            "name": "Corsair Crystal 570X RGB",
-            "type": "Full Tower",
-            "color": "White",
-            "sidepanel": "Tempered Glass",
-            "exvolume": "65.7L",
-            "price": "$189.99",
-            "buyLink": "#",
-            "imageUrl": "https://cdna.pcpartpicker.com/static/forever/images/product/bc6e987da3fe22c616898d1d7fa3d227.256p.jpg"
-          },
-          {
-            "name": "NZXT H9 Flow",
-            "type": "Mid Tower",
-            "color": "Black",
-            "sidepanel": "Tempered Glass",
-            "exvolume": "40.4L",
-            "price": "$89.99",
-            "buyLink": "#",
-            "imageUrl": "https://cdna.pcpartpicker.com/static/forever/images/product/61eb5534e35ce8af07f25ff28197862b.256p.jpg"
-          },
-          {
-            "name": "NZXT H510",
-            "type": "Mid Tower",
-            "color": "Black",
-            "sidepanel": "Tempered Glass",
-            "exvolume": "57.5L",
-            "price": "$69.99",
-            "buyLink": "#",
-            "imageUrl": "https://cdna.pcpartpicker.com/static/forever/images/product/84cb77175187296029f50f8bf6ca6960.256p.jpg"
-          },
-          {
-            "name": "Corsair Crystal 570X RGB",
-            "type": "Full Tower",
-            "color": "White",
-            "sidepanel": "Tempered Glass",
-            "exvolume": "65.7L",
-            "price": "$189.99",
-            "buyLink": "#",
-            "imageUrl": "https://cdna.pcpartpicker.com/static/forever/images/product/bc6e987da3fe22c616898d1d7fa3d227.256p.jpg"
-          },
-          {
-            "name": "NZXT H9 Flow",
-            "type": "Mid Tower",
-            "color": "Black",
-            "sidepanel": "Tempered Glass",
-            "exvolume": "40.4L",
-            "price": "$89.99",
-            "buyLink": "#",
-            "imageUrl": "https://cdna.pcpartpicker.com/static/forever/images/product/61eb5534e35ce8af07f25ff28197862b.256p.jpg"
-          },
-          {
-            "name": "NZXT H510",
-            "type": "Mid Tower",
-            "color": "Black",
-            "sidepanel": "Tempered Glass",
-            "exvolume": "57.5L",
-            "price": "$69.99",
-            "buyLink": "#",
-            "imageUrl": "https://cdna.pcpartpicker.com/static/forever/images/product/84cb77175187296029f50f8bf6ca6960.256p.jpg"
-          },
-          {
-            "name": "Corsair Crystal 570X RGB",
-            "type": "Full Tower",
-            "color": "White",
-            "sidepanel": "Tempered Glass",
-            "exvolume": "65.7L",
-            "price": "$189.99",
-            "buyLink": "#",
-            "imageUrl": "https://cdna.pcpartpicker.com/static/forever/images/product/bc6e987da3fe22c616898d1d7fa3d227.256p.jpg"
-          },
-          {
-            "name": "NZXT H9 Flow",
-            "type": "Mid Tower",
-            "color": "Black",
-            "sidepanel": "Tempered Glass",
-            "exvolume": "40.4L",
-            "price": "$89.99",
-            "buyLink": "#",
-            "imageUrl": "https://cdna.pcpartpicker.com/static/forever/images/product/61eb5534e35ce8af07f25ff28197862b.256p.jpg"
-          },
-    ];
+  const caseData = [
+    {
+      name: "NZXT H510",
+      type: "Mid Tower",
+      color: "Black",
+      sidepanel: "Tempered Glass",
+      exvolume: "57.5L",
+      price: "₹" + "15,500",
+      buyLink: "https://amzn.in/d/eDIuy2M",
+      imageUrl: "https://m.media-amazon.com/images/I/51SSkgGjutL._SX679_.jpg"
+    },
+    {
+      name: "Corsair Crystal 680X RGB",
+      type: "Midi Tower",
+      color: "Black",
+      sidepanel: "Tempered Glass",
+      exvolume: "65.7L",
+      price: "₹" + "26,799",
+      buyLink: "https://amzn.in/d/fNZHGIe",
+      imageUrl: "https://m.media-amazon.com/images/I/61e4fEX6KgL._SX679_.jpg"
+    },
+    {
+      name: "NZXT H9 Flow",
+      type: "Mid Tower",
+      color: "White",
+      sidepanel: "Tempered Glass",
+      exvolume: "40.4L",
+      price: "₹" + "19,500",
+      buyLink: "https://amzn.in/d/0Ct1r1I",
+      imageUrl: "https://m.media-amazon.com/images/I/61Yr06ThzYL._SX679_.jpg"
+    },
+  ];
 
-    return(
-        <div>
-            <CaseDataTable caseData={caseData} onSelectCase={handleSelectedCase} />
-        </div>
-    )
+  return (
+    <div>
+      <CaseDataTable caseData={caseData} onSelectCase={handleSelectedCase} />
+    </div>
+  )
 };
 
 export default CasePage;

@@ -13,6 +13,9 @@ import StoragePage from "./components/Product Pages/StoragePage"
 import VideoCardPage from "./components/Product Pages/VideoCardPage"
 import PowerSupplyPage from "./components/Product Pages/PowerSupplyPage"
 import CasePage from "./components/Product Pages/CasePage"
+import ProductDetail from './components/ProductDetail'
+import MonitorPage from "./components/Product Pages/MonitorPage"
+import OsPage from "./components/Product Pages/OsPage"
 
 
 
@@ -35,6 +38,9 @@ function App() {
                     <Route path="/components/videoCard" element={<VideoCardPage/>} />
                     <Route path="/components/power-supply" element={<PowerSupplyPage/>} />
                     <Route path="/components/case" element={<CasePage/>} />
+                    <Route path="/product/:id" element={<ProductDetail />} />
+                    <Route path="/components/monitor" element={<MonitorPage/>}/>
+                    <Route path="/components/os" element={<OsPage/>}/>
                 </Routes>
                 <Footer />
             </BrowserRouter>

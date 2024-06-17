@@ -82,6 +82,8 @@ const Navbar = () => {
                                     {/* <a href="/components/case" className="block px-4 py-2 text-left text-gray-700 hover:bg-gray-300">Case</a> */}
                                     <Link to="/components/case" className="block px-4 py-2 text-left text-gray-700 hover:bg-gray-300" onClick={handleDropdownItemClick}>Case</Link>
                                     <Link to="/components/cooler" className="block px-4 py-2 text-left text-gray-700 hover:bg-gray-300" onClick={handleDropdownItemClick}>Cooler</Link>
+                                    <Link to="/components/monitor" className="block px-4 py-2 text-left text-gray-700 hover:bg-gray-300" onClick={handleDropdownItemClick}>Monitor</Link>
+                                    <Link to="/components/os" className="block px-4 py-2 text-left text-gray-700 hover:bg-gray-300" onClick={handleDropdownItemClick}>Operating System</Link>
                                 </div>
                             </div>
                         </div>
@@ -120,6 +122,8 @@ const Navbar = () => {
                         <a href="/components/power-supply" className="block text-left rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900">Power Supply</a>
                         <a href="/components/case" className="block text-left rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900">Case</a>
                         <a href="/components/cooler" className="block text-left rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900">Cooling</a>
+                        <a href="/components/monitor" className="block text-left rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900">Monitor</a>
+                        <a href="/components/os" className="block text-left rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900">Operating system</a>
                     </div>
                     <Link to="/guides" className="block rounded-md px-3 py-2 text-left text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">Guides</Link>
                     

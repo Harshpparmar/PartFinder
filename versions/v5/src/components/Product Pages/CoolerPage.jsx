@@ -109,18 +109,18 @@ const CoolerPage = () => {
       socketCompatibility: "Intel LGA1200, LGA1150, LGA1151,...",
       fanRPM: "300 - 1500 RPM",
       noiseLevel: "24.6 - 49.9 dBA",
-      price: "$89.95",
-      buyLink: "#",
-      imageUrl: "https://cdna.pcpartpicker.com/static/forever/images/product/12bfecb3325a384ef35e38ada6b8bca3.256p.jpg"
+      price: "₹" + "10,040",
+      buyLink: "https://amzn.in/d/3LrydTf",
+      imageUrl: "https://m.media-amazon.com/images/I/51kgqhkUNuL._SY300_SX300_QL70_FMwebp_.jpg"
     },
     {
       name: "Cooler Master Hyper 212 RGB",
       socketCompatibility: "Intel LGA1200, LGA1150, LGA1151,...",
       fanRPM: "650 - 2000 RPM",
       noiseLevel: "8 - 30 dBA",
-      price: "$39.99",
-      buyLink: "#",
-      imageUrl: "https://cdna.pcpartpicker.com/static/forever/images/product/157afeba59d05304fe181106745e6177.256p.jpg"
+      price: "₹" + "3,549",
+      buyLink: "https://amzn.in/d/eHVHbAd",
+      imageUrl: "https://m.media-amazon.com/images/I/616JkGFQswL._SX679_.jpg"
     },
     // Add more cooler data as needed
   ];

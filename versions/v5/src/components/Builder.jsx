@@ -59,7 +59,7 @@ const Builder = () => {
 
     components.forEach(component => {
       if (component && component.price) {
-        const price = parseFloat(component.price.replace(/[$,]/g, '')); // Remove $ and , from the price string and convert to float
+        const price = parseFloat(component.price.replace(/[₹,]/g, '')); // Remove $ and , from the price string and convert to float
         if (!isNaN(price)) {
           totalPrice += price;
         }

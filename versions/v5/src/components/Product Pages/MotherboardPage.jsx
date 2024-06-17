@@ -12,12 +12,12 @@ const MotherboardPage = () => {
 
   const motherboardData = [
     {
-      name: "GIGABYTE B450 AORUS ELITE",
+      name: "GIGABYTE B450 AORUS M",
       socket: "AMD AM4",
       memorySlots: 4,
       formFactor: "ATX",
-      price: "$109.99",
-      buyLink: "#",
+      price: "₹" + "8,895",
+      buyLink: "https://amzn.in/d/6iCgWbm",
       imageUrl: "https://cdna.pcpartpicker.com/static/forever/images/product/40037fa5f1c2c2b92273f1a5547ed181.256p.jpg"
     },
     {
@@ -25,8 +25,8 @@ const MotherboardPage = () => {
       socket: "AMD AM4",
       memorySlots: 4,
       formFactor: "ATX",
-      price: "$129.99",
-      buyLink: "#",
+      price: "₹" + "23,500",
+      buyLink: "https://amzn.in/d/b0gvajQ",
       imageUrl: "https://m.media-amazon.com/images/I/51W9XJLDRlL.jpg"
     },
     // Add more motherboard data as needed

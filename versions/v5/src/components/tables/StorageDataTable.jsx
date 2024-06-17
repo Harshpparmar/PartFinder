@@ -2,7 +2,7 @@ import React from 'react';
 
 const StorageDataTable = ({ storageData , onSelectStorage}) => {
   return (
-    <div className="bg-gray-100 py-4 sm:py-8">
+    <div className="bg-gray-100 py-4 sm:py-8 h-screen">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="overflow-x-auto">
           <table className="w-full table-auto text-sm sm:text-base">
