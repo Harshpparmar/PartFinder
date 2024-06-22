@@ -72,11 +72,16 @@ const ProductDetail = () => {
         <h2 className="text-2xl font-bold mt-6 mb-4">PSU</h2>
         <p>{product.psuDescription}</p>
 
+{/* 
         <h2 className="text-2xl font-bold mt-6 mb-4">Customizing</h2>
-        <p>{product.customizing}</p>
-
-        <h2 className="text-2xl font-bold mt-6 mb-4">Intel Version</h2>
+        <p>{product.customizing}</p> */}
+         
+         {/* FIX THIS ISSUE OF AMD AND INTEL BOTH SHOWING */}
+         <h2 className="text-2xl font-bold mt-6 mb-4">Intel Version</h2>
         <p>{product.intelVersion}</p>
+
+        <h2 className="text-2xl font-bold mt-6 mb-4">AMD Version</h2>
+        <p>{product.amdVersion}</p>
       </div>
     </section>
   );
